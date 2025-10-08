@@ -60,7 +60,7 @@ pub(crate) fn test_hook<V: 'static>(
         vdom.render_immediate(&mut NoOpMutations);
     }
 
-    vdom.in_runtime(|| ScopeId::ROOT.in_runtime(|| {}))
+    vdom.in_runtime(|| {})
 }
 
 #[derive(Debug)]

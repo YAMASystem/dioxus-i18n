@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.0-rc.1]
+
+### Changed
+- **BREAKING**: Updated dependencies to support Dioxus 0.7.0-rc.1
+- Updated from `dioxus-lib` to `dioxus` package name following Dioxus API changes
+- Fixed test compatibility with new ScopeId API (removed deprecated `in_runtime()` method)
+
+### Note
+This is a breaking change that requires users to update to Dioxus 0.7.0-rc.1 or later. While the public API of dioxus-i18n remains the same, the underlying dependency changes make this incompatible with previous Dioxus versions.
+
 ## [0.4.3]
 
 - [Issue #19](https://github.com/dioxus-community/dioxus-i18n/issues/19) Enable use of "message-id.attribute-id"
